@@ -1,7 +1,7 @@
 /* @flow */
 
 import React, { PropTypes, Component } from 'react';
-import { Animated, StyleSheet, NativeModules, PanResponder, Platform, View, I18nManager, Keyboard } from 'react-native';
+import { Animated, StyleSheet, NativeModules, PanResponder, Platform, View, I18nManager, Keyboard, ViewPropTypes } from 'react-native';
 
 import Transitioner from './Transitioner';
 import Card from './Card';
@@ -183,7 +183,7 @@ class CardStack extends Component<DefaultProps, Props, void> {
     /**
      * Custom style applied to the cards stack.
      */
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
   };
 
   static defaultProps: DefaultProps = {
